@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JavaScript / jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+        <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Walter+Turncoat&display=swap"
+        rel="stylesheet">
+    <title>Re-aker - Reader | Speaks your text!</title>
+</head>
+
+<body>
+    <br>
+    <div class="container bg-white">
+        <br>
+        <h1 class="text-center">Re-aker</h1>
+        <h4 class="text-center">A website to read your text!</h4>
+        <div class="col-sm">
+            <textarea class="col-sm" name="text" id="text" cols="10" rows="15"></textarea>
+            <br>
+            <hr>
+            <div class="col text-center" id="speed-selector">
+                    <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="0.8">
+                            <label class="form-check-label" for="inlineRadio1">Slow</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1.3">
+                            <label class="form-check-label" for="inlineRadio2">Normal</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio3" value="2">
+                            <label class="form-check-label" for="inlineRadio3">Fast</label>
+                          </div>
+                </div>
+            <div class="row text-center">
+                <div class="col" id="player">
+                    <button type="button" class="btn btn-success" id="speak"><img id="icon" src="img/speak.svg" alt=""> Speak</button>
+                    <button type="button" class="btn btn-warning" id="pause"><img id="icon" src="img/pause.svg" alt=""> Pause</button>
+                    <button type="button" class="btn btn-primary" id="resume"><img id="icon" src="img/resume.svg" alt=""> Resume</button>
+                    <button type="button" class="btn btn-danger" id="stop"><img id="icon" src="img/stop.svg" alt=""> Stop</button>
+                </div>
+            </div>
+            <br>
+            </div>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
