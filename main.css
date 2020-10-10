@@ -27,8 +27,13 @@ button {
     padding-right: 3px;
 }
 
-
-h1,h4,label,button{
-    font-family: 'Walter Turncoat', cursive;
-
+#book-icon {
+    width: 50px;
+    padding-left: 6px;
+}
+h1{
+    font-family: 'Fredoka One', cursive;
+}
+h4,label,button{
+    font-family: 'Balsamiq Sans', cursive;
 } 
